@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Halaman Tita</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Indikasari Tita Rahmadani">
+  <meta name="nim" content="233307017">
+  
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    header{
+      background-color: #666;
+      padding: 30px;
+      text-align: center;
+      font-size: 35px;
+      color: white;
+    }
+    
+    nav{
+      float: left;
+      width: 30%;
+      height: 300px;
+      background: #ccc;
+      padding: 20px;
+    }
+    
+    nav ul{
+      list-style-type: none;
+      padding: 20px;
+    }
+    
+    article {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: #f1f1f1;
+        height: 400px;
+    }
+    
+    section::after{
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    footer{
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 17px;
+      background-color: #777;
+      padding: 10px;
+      text-align: center;
+      color: white;
+    }
+    
+    @media (max-width: 600px){
+      nav, article {
+        width: 100%;
+        height: auto;
+      }
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Web Tita</h2>
+  </header>
+  
+  <section>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Gambar.html">Gambar</a></li>
+        <li><a href="event.html">Event</a></li>
+        <li><a href="audio.html">Audio</a></li>
+        <li><a href="video.html">Video</a></li>
+        <li><a href="svg.html">SVG</a></li>
+        <li><a href="canvas.html">Canvas</a></li>
+      </ul>
+    </nav>
+    
+    <article>
+      <h1>Gambar Pemandangan</h1>
+      <input type="image" src="gambar/gambar.jpg" alt="oke" width="200" height="100" onmouseover="this.src='gambar/gambar1.jpg'" onmouseout="this.src='gambar/gambar.jpg'">
+      <input type="image" src="gambar/gambar1.jpg" alt="oke" width="200" height="100" onclick="this.src='gambar/gambar2.jpg'" onclick="this.src='gambar/gambar1.jpg'">
+      <input type="image" src="gambar/gambar2.jpg" alt="oke" width="200" height="100" ondblclick="this.src='gambar/gambar3.jpg'" onclick="this.src='gambar/gambar4.jpg'"> <br>
+      <input type="image" src="gambar/gambar4.jpg" alt="oke" width="200" height="100" >
+      <input type="image" src="gambar/gambar5.jpg" alt="oke" width="200" height="100" >
+      <input type="image" src="gambar/gambar6.jpg" alt="oke" width="200" height="100" >
+
+      <p>kesimpulan : <br>
+        Coding HTML tersebut membuat tata letak situs web dengan header, bilah navigasi, bagian konten yang menampilkan galeri gambar, dan footer dengan informasi hak cipta. Gambar-gambar di galeri dapat dialihkan dengan mengarahkan kursor ke gambar tersebut.</p>
+    </article>
+  </section>
+  
+  <footer>
+    <p>copyright@Indikasarititarahmadani_233307017</p> <!--ubah sesuai selera-->
+  </footer>
+</body>
+</html>

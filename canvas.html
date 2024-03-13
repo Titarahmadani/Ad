@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Halaman Tita</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Indikasari Tita Rahmadani">
+  <meta name="nim" content="233307017">
+  
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    header{
+      background-color: #666;
+      padding: 30px;
+      text-align: center;
+      font-size: 35px;
+      color: white;
+    }
+    
+    nav{
+      float: left;
+      width: 30%;
+      height: 300px;
+      background: #ccc;
+      padding: 20px;
+    }
+    
+    nav ul{
+      list-style-type: none;
+      padding: 20px;
+    }
+    
+    article {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: #f1f1f1;
+        height: 700px;
+    }
+    
+    section::after{
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    footer{
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 17px;
+      background-color: #777;
+      padding: 10px;
+      text-align: center;
+      color: white;
+    }
+    
+    @media (max-width: 600px){
+      nav, article {
+        width: 100%;
+        height: auto;
+      }
+    }
+    
+  </style>
+</head>
+<body>
+  
+  <header>
+    <h2>Web Tita</h2>
+  </header>
+  
+  <section>
+    <nav> <!----->
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Gambar.html">Gambar</a></li>
+        <li><a href="event.html">Event</a></li>
+        <li><a href="audio.html">Audio</a></li>
+        <li><a href="video.html">Video</a></li>
+        <li><a href="svg.html">SVG</a></li>
+        <li><a href="canvas.html">Canvas</a></li>
+      </ul>
+    </nav>
+    
+    <article>
+      <h1>Judul Artikel</h1>
+      <canvas id="canvas" width="400" height="400" style="background-color: #333">
+      </canvas>
+      
+      <p>kesimpulan : <br>
+        Coding HTML ini meletakkan dasar untuk situs web sederhana dengan header, bilah navigasi, area konten untuk artikel dengan menyisipkan script JavaScript.</p>
+    </article>
+  </section>
+  
+  <footer>
+    <p>copyright@Indikasarititarahmadani_233307017</p> <!--ubah sesuai selera-->
+  </footer>
+</body>
+  <script src="js/main.js"></script>
+</html>

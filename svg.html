@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Halaman Tita</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Indikasari Tita Rahmadani">
+  <meta name="nim" content="233307017">
+  
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    header{
+      background-color: #666;
+      padding: 30px;
+      text-align: center;
+      font-size: 35px;
+      color: white;
+    }
+    
+    nav{
+      float: left;
+      width: 30%;
+      height: 300px;
+      background: #ccc;
+      padding: 20px;
+    }
+    
+    nav ul{
+      list-style-type: none;
+      padding: 20px;
+    }
+    
+    article {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: #f1f1f1;
+        height: 900px;
+    }
+    
+    section::after{
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    footer{
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 17px;
+      background-color: #777;
+      padding: 10px;
+      text-align: center;
+      color: white;
+    }
+    
+    @media (max-width: 600px){
+      nav, article {
+        width: 100%;
+        height: auto;
+      }
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Web Tita</h2>
+  </header>
+  
+  <section>
+    <nav> <!----->
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Gambar.html">Gambar</a></li>
+        <li><a href="event.html">Event</a></li>
+        <li><a href="audio.html">Audio</a></li>
+        <li><a href="video.html">Video</a></li>
+        <li><a href="svg.html">SVG</a></li>
+        <li><a href="canvas.html">Canvas</a></li>
+      </ul>
+    </nav>
+    
+    <article>
+      <h1>Judul Artikel</h1>
+      <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow"/>
+      </svg>
+      
+      <svg width=""="">
+        <rect width="400" height="100" style="fill:rgb (0,0,255);stroke-width:10;stroke:rgb(0,0,0)"/>
+      </svg>
+      
+      <svg width=""="">
+        <rect x="50" y="20" rx="20" ry="20" width="150" height="150"
+        style="fill:red";stroke="black";stroke-width:5;opacity:0.5>/>
+      </svg>
+
+      <svg viewBox width="300" height="300">
+        <polygon points="100,0 50,150 75,165 150,150" fill="lime" stroke="black" stroke-width="1" />
+    </svg>
+      
+      <p>kesimpulan : <br>
+        Coding HTML ini isinya mengenai elemen SVG menciptakan bentuk berwarna dan poligon.</p>
+    </article>
+  </section>
+  
+  <footer>
+    <p>copyright@Indikasarititarahmadani_233307017</p> <!--ubah sesuai selera-->
+  </footer>
+</body>
+</html>
